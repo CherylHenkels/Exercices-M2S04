@@ -14,3 +14,19 @@ console.log(pares);
 let quadrados = numeros.map(n => {return n**2});
 
 console.log(quadrados);
+
+// Exercicio 4
+class Produto{
+    nome
+    preco
+    quantidade
+
+    constructor(nome, preco, quantidade){
+        this.nome = nome
+        this.preco = preco
+        this.quantidade = quantidade
+    }
+}
+
+let boneca = new Produto('boneca', 100.00, 2)
+console.log(boneca);
