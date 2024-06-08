@@ -37,11 +37,17 @@ class Produto{
         }
         
     }
+
+    repor(quantidadeReposicao){
+        this.quantidade+=quantidadeReposicao;
+        console.log(this.quantidade);
+    }
 }
 
 let boneca = new Produto('boneca', 100.00, 2)
 console.log(boneca);
 
 
-boneca.vender(3);
+//boneca.vender(3);
+boneca.repor(54);
 
