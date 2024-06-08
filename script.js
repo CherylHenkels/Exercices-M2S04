@@ -48,6 +48,12 @@ class Produto{
     mostrarEstoque(){
         console.log(`O produto ${this.nome.toUpperCase()} possui ${this.quantidade} unidades disponíveis`)
     }
+
+    //Exercicio 8
+    atualizarPreco(novoPreco){
+        this.preco = novoPreco;
+        console.log(this.preco);
+    }
 }
 
 let boneca = new Produto('boneca', 100.00, 2)
@@ -57,4 +63,5 @@ console.log(boneca);
 //boneca.vender(3);
 boneca.repor(54);
 boneca.mostrarEstoque();
+boneca.atualizarPreco(120.00);
 
