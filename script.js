@@ -9,3 +9,8 @@ console.log(soma);
 let pares = numeros.filter(n=> {return n%2 == 0})
 
 console.log(pares);
+
+// Exercicio 3
+let quadrados = numeros.map(n => {return n**2});
+
+console.log(quadrados);
