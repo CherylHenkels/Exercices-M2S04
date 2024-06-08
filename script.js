@@ -26,7 +26,22 @@ class Produto{
         this.preco = preco
         this.quantidade = quantidade
     }
+
+    // Exercicio 5
+    vender(quantidadeVenda){
+        if(quantidadeVenda <= this.quantidade){
+            this.quantidade-=quantidadeVenda;
+            console.log(this.quantidade);
+        } else{
+            console.log("Estoque insuficiente")
+        }
+        
+    }
 }
 
 let boneca = new Produto('boneca', 100.00, 2)
 console.log(boneca);
+
+
+boneca.vender(3);
+
