@@ -38,9 +38,15 @@ class Produto{
         
     }
 
+    // Exercicio 6
     repor(quantidadeReposicao){
         this.quantidade+=quantidadeReposicao;
         console.log(this.quantidade);
+    }
+
+    // Exercicio 7
+    mostrarEstoque(){
+        console.log(`O produto ${this.nome.toUpperCase()} possui ${this.quantidade} unidades disponíveis`)
     }
 }
 
@@ -50,4 +56,5 @@ console.log(boneca);
 
 //boneca.vender(3);
 boneca.repor(54);
+boneca.mostrarEstoque();
 
